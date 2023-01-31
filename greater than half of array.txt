@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i,j,k,v,z=1;
+    int l,b=0,q=0;
+    cout<<"Enter size of array ";
+    cin>>i;
+    cout<<"Enter arrays ";
+    int n[i];
+    for(int j=0;j<i;j++){
+    cin>>n[j];}
+    
+    for(int j=0;j<i;j++){
+    k=n[j];
+    for(int j=z;j<i;j++){
+     l=n[j];
+     if(k==l){
+        q=q+1;
+         v=k;}
+    
+        
+     } 
+       if(b<q){ 
+           b=q;
+         
+         q=0;
+          }
+    
+    
+        //cout<<endl;
+      z= z+1;
+      q=0;
+    }if(i/2<b+1){
+    cout<<v<<" is greater than half of array";}
+  else cout<<"No any number is greater than half of array";
+}
